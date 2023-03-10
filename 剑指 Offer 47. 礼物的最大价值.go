@@ -1,4 +1,3 @@
-package leetcode
 
 func maxValue(grid [][]int) int {
 	m := len(grid)
