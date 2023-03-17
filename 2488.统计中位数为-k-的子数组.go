@@ -1,5 +1,3 @@
-package leetcode
-
 /*
  * @lc app=leetcode.cn id=2488 lang=golang
  *
