@@ -1,0 +1,58 @@
+/*
+ * @lc app=leetcode.cn id=1012 lang=golang
+ *
+ * [1012] 至少有 1 位重复的数字
+ */
+
+// @lc code=start
+func numDupDigitsAtMostN(n int) (ans int) {
+	s := strconv.Itoa(n)
+	m := len(s)
+	memo := make([][1 << 10]int, m)
+	for i := range memo {
+		for j := range memo[i] {
+			memo[i][j] = -1 // -1 表示没有计算过
+		}
+	}
+	var f func(int, int, bool, bool) int
+	f = func(i, mask int, isLimit, isNum bool) (res int) {
+		if i == m {
+			if isNum {
+				return 1
+			}
+			return 0
+		}
+		if !isLimit && isNum {
+			p := &memo[i][mask]
+			if *p >= 0 {
+				return *p
+			}
+			defer func() { *p = res }()
+		}
+		if !isNum {
+			res += f(i+1, mask, false, false)
+		}
+		d := 0
+		if !isNum {
+			d = 1
+		}
+		up := 9
+		if isLimit {
+			up = int(s[i] - '0')
+		}
+		for ; d <= up; d++ {
+			if mask>>d&1 == 0 {
+				res += f(i+1, mask|1<<d, isLimit && d == up, true)
+			}
+		}
+		return res
+	}
+	return n - f(0, 0, true, false)
+}
+
+// 作者：endlesscheng
+// 链接：https://leetcode.cn/problems/numbers-with-repeated-digits/solution/by-endlesscheng-c5vg/
+// 来源：力扣（LeetCode）
+// 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+// @lc code=end
