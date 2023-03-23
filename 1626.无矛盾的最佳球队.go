@@ -9,7 +9,7 @@ import "sort"
  */
 
 // @lc code=start
-func bestTeamScore(scores []int, ages []int) int {
+func bestTeamScore1(scores []int, ages []int) int {
 	n := len(scores)
 	people := make([][2]int, n)
 	for i := 0; i < n; i++ {
@@ -35,6 +35,52 @@ func bestTeamScore(scores []int, ages []int) int {
 		result = max(result, dp[i])
 	}
 	return result
+}
+
+func bestTeamScore(scores []int, ages []int) int {
+	n := len(scores)
+	maxArg := 0
+	people := make([][2]int, n)
+	for i := 0; i < n; i++ {
+		people[i] = [2]int{scores[i], ages[i]}
+		maxArg = max(maxArg, ages[i])
+	}
+	sort.Slice(people, func(i, j int) bool {
+		if people[i][0] < people[j][0] {
+			return true
+		} else if people[i][0] > people[j][0] {
+			return false
+		}
+		return people[i][1] < people[j][1]
+	})
+
+	t := make([]int, maxArg+1)
+	var query func(arg int) int
+	query = func(arg int) int {
+		ret := 0
+		for i := arg; i > 0; i -= lowbit(i) {
+			ret = max(ret, t[i])
+		}
+		return ret
+	}
+	var update func(arg, cur int)
+	update = func(arg, cur int) {
+		for i := arg; i <= maxArg; i += lowbit(i) {
+			t[i] = max(t[i], cur)
+		}
+	}
+	result := 0
+	for i := 0; i < n; i++ {
+		score, arg := people[i][0], people[i][1]
+		cur := score + query(arg)
+		update(arg, cur)
+		result = max(cur, result)
+	}
+	return result
+}
+
+func lowbit(x int) int {
+	return x & (-x)
 }
 
 func max(a, b int) int {
