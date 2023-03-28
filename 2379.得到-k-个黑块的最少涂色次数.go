@@ -1,7 +1,3 @@
-package leetcode
-
-import "strings"
-
 /*
  * @lc app=leetcode.cn id=2379 lang=golang
  *

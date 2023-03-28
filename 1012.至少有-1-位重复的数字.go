@@ -1,10 +1,3 @@
-package leetcode
-
-import (
-	"net/http"
-	"strconv"
-)
-
 /*
  * @lc app=leetcode.cn id=1012 lang=golang
  *
