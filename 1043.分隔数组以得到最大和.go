@@ -1,5 +1,3 @@
-package leetcode
-
 /*
  * @lc app=leetcode.cn id=1043 lang=golang
  *
@@ -12,12 +10,13 @@ func maxSumAfterPartitioning(arr []int, k int) int {
 	n := len(arr)
 	d := make([]int, n+1)
 	for i := 1; i <= n; i++ {
-		maxValue := arr[i-1]
-		for j := i - 1; j >= max(0, i-k); j-- {
-			d[i] = max(d[i], d[j]+maxValue*(i-j))
-			if j > 0 && arr[j-1] > maxValue {
-				maxValue = arr[j-1]
+		j := i - 1
+		maxValue := arr[j]
+		for ; j >= max(0, i-k); j-- {
+			if arr[j] > maxValue {
+				maxValue = arr[j]
 			}
+			d[i] = max(d[i], d[j]+(maxValue*(i-j)))
 		}
 	}
 	return d[n]

@@ -1,5 +1,3 @@
-package leetcode
-
 /*
  * @lc app=leetcode.cn id=1026 lang=golang
  *
@@ -15,11 +13,11 @@ package leetcode
  *     Right *TreeNode
  * }
  */
-// type TreeNode struct {
-// 	Val   int
-// 	Left  *TreeNode
-// 	Right *TreeNode
-// }
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
 
 func maxAncestorDiff(root *TreeNode) (result int) {
 	var dfs func(*TreeNode)
