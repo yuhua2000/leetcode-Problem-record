@@ -1,0 +1,39 @@
+/*
+ * @lc app=leetcode.cn id=1595 lang=golang
+ *
+ * [1595] 连通两组点的最小成本
+ */
+
+// @lc code=start
+func min(x, y int) int {
+	if x < y {
+		return x
+	}
+	return y
+}
+
+func connectTwoGroups(cost [][]int) int {
+	size1, size2, m := len(cost), len(cost[0]), 1<<len(cost[0])
+	dp1, dp2 := make([]int, m), make([]int, m)
+	for i := 1; i < len(dp1); i++ {
+		dp1[i] = 0x3f3f3f3f
+	}
+	for i := 1; i <= size1; i++ {
+		for s := 0; s < m; s++ {
+			dp2[s] = 0x3f3f3f3f
+			for k := 0; k < size2; k++ {
+				if s&(1<<k) == 0 {
+					continue
+				}
+
+				dp2[s] = min(dp2[s], dp2[s^(1<<k)]+cost[i-1][k])
+				dp2[s] = min(dp2[s], dp1[s]+cost[i-1][k])
+				dp2[s] = min(dp2[s], dp1[s^(1<<k)]+cost[i-1][k])
+			}
+		}
+		dp1, dp2 = dp2, dp1
+	}
+	return dp1[m-1]
+}
+
+// @lc code=end
