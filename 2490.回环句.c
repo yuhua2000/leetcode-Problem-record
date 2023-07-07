@@ -4,16 +4,12 @@
  * [2490] 回环句
  */
 
-// @lc code=start
-bool isCircularSentence(char *sentence)
-{
+ // @lc code=start
+bool isCircularSentence(char* sentence) {
     int n = strlen(sentence);
-    for (int i = 0; i < n; i++)
-    {
-        if (sentence[i] == ' ')
-        {
-            if (sentence[i - 1] != sentence[i + 1])
-            {
+    for (int i = 0; i < n; i++) {
+        if (sentence[i] == ' ') {
+            if (sentence[i - 1] != sentence[i + 1]) {
                 return false;
             }
         }
