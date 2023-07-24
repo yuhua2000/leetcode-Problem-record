@@ -1,0 +1,32 @@
+/*
+ * @lc app=leetcode.cn id=42 lang=golang
+ *
+ * [42] 接雨水
+ */
+
+// @lc code=start
+func trap(height []int) (ans int) {
+	left, right := 0, len(height)-1
+	leftMax, rightMax := 0, 0
+	for left < right {
+		leftMax = max(leftMax, height[left])
+		rightMax = max(rightMax, height[right])
+		if height[left] < height[right] {
+			ans += leftMax - height[left]
+			left++
+		} else {
+			ans += rightMax - height[right]
+			right--
+		}
+	}
+	return
+}
+
+func max(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
+}
+
+// @lc code=end
