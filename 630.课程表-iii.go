@@ -1,10 +1,3 @@
-package leetcode
-
-import (
-	"container/heap"
-	"sort"
-)
-
 /*
  * @lc app=leetcode.cn id=630 lang=golang
  *
@@ -19,10 +12,10 @@ func scheduleCourse(courses [][]int) int {
 	h := &Heap{}
 	total := 0
 	for _, course := range courses {
-		if t := course[0]; t+total <= course[1] {
+		if t := course[0]; t+total <= course[1] { // 可以完成 直接加入
 			total += t
 			heap.Push(h, t)
-		} else if h.Len() > 0 && t < h.IntSlice[0] {
+		} else if h.Len() > 0 && t < h.IntSlice[0] { // 结束时间晚 持续时间短 所以替换
 			total += t - h.IntSlice[0]
 			h.IntSlice[0] = t
 			heap.Fix(h, 0)
