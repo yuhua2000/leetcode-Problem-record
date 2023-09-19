@@ -1,10 +1,3 @@
-//Definition for a binary tree node.
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 /*
  * @lc app=leetcode.cn id=337 lang=golang
  *
