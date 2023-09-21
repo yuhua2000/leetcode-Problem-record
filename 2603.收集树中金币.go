@@ -1,0 +1,54 @@
+func collectTheCoins(coins []int, edges [][]int) int {
+	n := len(coins)
+	g := make([][]int, n)
+	degree := make([]int, n)
+	for _, edges := range edges {
+		x, y := edges[0], edges[1]
+		g[x] = append(g[x], y)
+		g[y] = append(g[y], x)
+		degree[x]++
+		degree[y]++
+	}
+
+	rest := n
+	q := []int{}
+	for i := 0; i < n; i++ {
+		if degree[i] == 1 && coins[i] == 0 {
+			q = append(q, i)
+		}
+	}
+	for len(q) > 0 {
+		u := q[0]
+		q = q[1:]
+		degree[u]--
+		rest--
+		for _, v := range g[u] {
+			degree[v]--
+			if degree[v] == 1 && coins[v] == 0 {
+				q = append(q, v)
+			}
+		}
+	}
+
+	for j := 0; j < 2; j++ {
+		q := []int{}
+		for i := 0; i < n; i++ {
+			if degree[i] == 1 {
+				q = append(q, i)
+			}
+		}
+		for len(q) > 0 {
+			u := q[0]
+			q = q[1:]
+			degree[u]--
+			rest--
+			for _, v := range g[u] {
+				degree[v]--
+			}
+		}
+	}
+	if rest == 0 {
+		return 0
+	}
+	return (rest - 1) * 2
+}
