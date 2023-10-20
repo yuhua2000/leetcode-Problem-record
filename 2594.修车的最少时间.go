@@ -1,7 +1,3 @@
-package leetcode
-
-import "math"
-
 func repairCars(ranks []int, cars int) int64 {
 	l, r := 1, ranks[0]*cars*cars
 	var check = func(m int) bool {

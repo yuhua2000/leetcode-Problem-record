@@ -1,7 +1,3 @@
-package leetcode
-
-import "sort"
-
 /*
  * @lc app=leetcode.cn id=1488 lang=golang
  *
