@@ -99,7 +99,7 @@ class FrontMiddleBackQueue {
             {
                 right.push_front(left.back());
                 left.pop_back();
-            }   
+            }
         }
         return result;
 
