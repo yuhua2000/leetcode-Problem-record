@@ -1,0 +1,51 @@
+#include <vector>
+
+using namespace std;
+
+/*
+ * @lc app=leetcode.cn id=2397 lang=cpp
+ *
+ * [2397] 被列覆盖的最多行数
+ */
+
+ // @lc code=start
+class Solution {
+    public:
+    int maximumRows(vector<vector<int>>& matrix, int numSelect)
+    {
+        int m = matrix.size();
+        int n = matrix[0].size();
+        vector<int> mask(m, 0);
+        for (int i = 0; i < m; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                mask[i] |= matrix[i][j] << (n - j - 1);
+            }
+        }
+
+        int res = 0;
+        int cur = 0;
+        while ((++cur) < 1 << n)
+        {
+            if (__builtin_popcount(cur) != numSelect)
+            {
+                continue;
+            }
+
+            int t = 0;
+            for (int j = 0; j < m; j++)
+            {
+                if ((mask[j] & cur) == mask[j])
+                {
+                    ++t;
+                }
+
+            }
+            res = max(res, t);
+        }
+        return res;
+    }
+};
+// @lc code=end
+
