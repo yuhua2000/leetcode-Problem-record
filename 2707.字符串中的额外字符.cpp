@@ -13,9 +13,9 @@ class Trie {
 
 	void insert(string word)
 	{
-		
+
 	}
-}
+};
 
 class Solution {
 	public:
