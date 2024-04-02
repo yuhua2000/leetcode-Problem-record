@@ -34,7 +34,7 @@ struct TreeNode {
  */
 class Solution {
     public:
-    vector<TreeNode*> allPossibleFBT(int n)
+    vector<TreeNode*> allPossibleFBT1(int n)
     {
         vector<TreeNode*> fullBinaryTrees;
         if (n % 2 == 0)
@@ -60,6 +60,34 @@ class Solution {
             }
         }
         return fullBinaryTrees;
+    }
+
+    vector<TreeNode*> allPossibleFBT(int n)
+    {
+        if (n % 2 == 0)
+            return {};
+
+
+        vector<vector<TreeNode*>> dp(n + 1);
+        dp[1] = { new TreeNode(0) };
+        for (int i = 3; i <= n; i += 2)
+        {
+            for (int j = 1; j < i; j += 2)
+            {
+                for (TreeNode* leftSubtree : dp[j])
+                {
+                    for (TreeNode* rightSubtree : dp[i - j - 1])
+                    {
+                        TreeNode* node = new TreeNode(0, leftSubtree, rightSubtree);
+                        dp[i].emplace_back(node);
+                    }
+                }
+            }
+
+        }
+
+
+        return dp[n];
     }
 };
 // @lc code=end
