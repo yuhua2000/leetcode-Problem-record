@@ -24,25 +24,27 @@ class Solution {
             return {};
 
         vector<int> result(nums[0] / 2, 0);
-        for (size_t i = 1; i < nums.size(); i++)
+        for (size_t i = 1; i <= nums.size() / 2; i++)
         {
-            while (nums[i])
+            if (nums[i] == 0)
+                continue;
+
+            if (nums[i] <= nums[i * 2])
             {
-                if ((i * 2) < 100001 && nums[i * 2])
-                {
-                    result.emplace_back(i);
-                    nums[i]--;
-                    nums[i * 2]--;
-                }
-                else
-                {
-                    return{};
-                }
+                nums[i * 2] -= nums[i];
+                result.insert(result.end(), nums[i], i);
+            }
+            else
+            {
+                return{};
             }
         }
 
-        return result;
 
+        if (result.size() == changed.size() / 2)
+            return result;
+
+        return {};
     }
 };
 // @lc code=end
