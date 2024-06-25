@@ -12,15 +12,14 @@ class Solution {
     public:
     int rob(vector<int>& nums)
     {
-        int first = 0, second = 0;
+        int a = 0, b = 0;
         for (int i = 0; i < nums.size(); i++)
         {
-            int temp = second;
-            second = max(first + nums[i], second);
-            first = temp;
+            int ta = a;
+            a = max(b + nums[i], a);
+            b = ta;
         }
-
-        return second;
+        return a;
     }
 };
 // @lc code=end
