@@ -33,11 +33,11 @@ class Solution {
 
             for (auto& [v, dist] : g[u])
             {
-                if (time+dist>maxTime)
+                if (time + dist > maxTime)
                 {
                     continue;
                 }
-                
+
                 if (visited[v])
                 {
                     dfs(v, time + dist, value);
@@ -48,14 +48,8 @@ class Solution {
                     dfs(v, time + dist, value + values[v]);
                     visited[v] = false;
                 }
-                
             }
-            
-
-
-        };
-
-
+            };
         dfs(0, 0, values[0]);
         return ans;
 
