@@ -29,15 +29,17 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 				return hair.Next
 			}
 		}
+
 		next := tail.Next
 		head, tail = reveres(head, tail)
-		
-		pre.Next = head
-		tail.Next = next
-		
-		head = tail.Next
-		pre = tail
+
+		pre.Next = head  // pre 的下一个 是反转后的头部 pre 是前一个
+		tail.Next = next // 接上原来的 next
+
+		head = tail.Next // head是这会 k 个的下一个
+		pre = tail       // 这会的 pre 是刚才的最后一个 也就是下一个 k个的前一个
 	}
+
 	return hair.Next
 }
 
