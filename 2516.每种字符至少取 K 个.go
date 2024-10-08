@@ -1,7 +1,3 @@
-package leetcode
-
-func min(...int) int
-
 func takeCharacters(s string, k int) int {
 	n := len(s)
 	prefixSum := [3]int{}
