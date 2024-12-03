@@ -3,8 +3,6 @@
  *
  * [25] K 个一组翻转链表
  */
-package leetcode
-
 type ListNode struct {
 	Val  int
 	Next *ListNode
