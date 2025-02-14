@@ -7,6 +7,7 @@
 // @lc code=start
 func countBalls(lowLimit int, highLimit int) int {
 	var box = make(map[int]int)
+	var result int
 	for i := lowLimit; i <= highLimit; i++ {
 		ball := i
 		var index int
@@ -15,11 +16,7 @@ func countBalls(lowLimit int, highLimit int) int {
 			ball /= 10
 		}
 		box[index]++
-	}
-
-	var result int
-	for v := range maps.Values(box) {
-		result = max(result, v)
+		result = max(result, box[index])
 	}
 
 	return result
