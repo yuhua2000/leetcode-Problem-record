@@ -1,3 +1,7 @@
+package leetcode
+
+import "strings"
+
 func printBin(num float64) string {
 	sb := &strings.Builder{}
 	sb.WriteString("0.")

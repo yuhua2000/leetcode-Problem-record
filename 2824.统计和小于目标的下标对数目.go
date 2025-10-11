@@ -1,3 +1,5 @@
+package leetcode
+
 func countPairs(nums []int, target int) (result int) {
 	sort.Ints(nums)
 	for i, j := 0, len(nums)-1; i < j; i++ {
@@ -6,5 +8,5 @@ func countPairs(nums []int, target int) (result int) {
 		}
 		result += j - i
 	}
-    return
+	return
 }

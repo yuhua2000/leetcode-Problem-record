@@ -1,3 +1,5 @@
+package leetcode
+
 func countKeyChanges(s string) int {
 	result := 0
 	for i := 1; i < len(s); i++ {

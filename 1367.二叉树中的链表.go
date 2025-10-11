@@ -1,16 +1,18 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1367 lang=golang
  *
  * [1367] 二叉树中的链表
  */
 
-//  Definition for singly-linked list.
+// Definition for singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
-//  Definition for a binary tree node.
+// Definition for a binary tree node.
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode

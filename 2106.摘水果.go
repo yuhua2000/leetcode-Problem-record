@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2106 lang=golang
  *
@@ -30,19 +32,6 @@ func maxTotalFruits(fruits [][]int, startPos int, k int) int {
 		right++
 	}
 	return ans
-}
-func min(a, b int) int {
-	if a > b {
-		return b
-	}
-	return a
-}
-
-func max(a, b int) int {
-	if b > a {
-		return b
-	}
-	return a
 }
 
 func abs(x int) int {

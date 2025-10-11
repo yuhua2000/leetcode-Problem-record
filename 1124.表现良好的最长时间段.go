@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1124 lang=golang
  *
@@ -33,5 +35,5 @@ func longestWPI(hours []int) int {
 	}
 	return res
 }
-// @lc code=end
 
+// @lc code=end

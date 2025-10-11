@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=874 lang=golang
  *
@@ -32,13 +34,6 @@ func robotSim(commands []int, obstacles [][]int) int {
 		}
 	}
 	return res
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

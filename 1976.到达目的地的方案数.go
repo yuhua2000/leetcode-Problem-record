@@ -1,3 +1,7 @@
+package leetcode
+
+import "math"
+
 /*
  * @lc app=leetcode.cn id=1976 lang=golang
  *
@@ -41,7 +45,7 @@ func countPaths(n int, roads [][]int) int {
 	// 完成后，dist[0][i] 即为正文部分的 dist[i]
 	const inf = math.MaxInt64 / 2
 	used := make([]bool, n)
-	
+
 	for i := 0; i < n; i++ {
 		u := -1
 		for j := 0; j < n; j++ {

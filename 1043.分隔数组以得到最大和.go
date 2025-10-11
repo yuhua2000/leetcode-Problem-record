@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1043 lang=golang
  *
@@ -21,14 +23,5 @@ func maxSumAfterPartitioning(arr []int, k int) int {
 	}
 	return d[n]
 }
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
-
 
 // @lc code=end

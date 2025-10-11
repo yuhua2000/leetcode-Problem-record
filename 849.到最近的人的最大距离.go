@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=849 lang=golang
  *
@@ -25,13 +27,6 @@ func maxDistToClosest(seats []int) int {
 		l = r
 	}
 	return res
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
 }
 
 // @lc code=end

@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1904 lang=golang
  *
@@ -30,5 +32,5 @@ func numberOfRounds(loginTime string, logoutTime string) int {
 		return ret
 	}
 }
-// @lc code=end
 
+// @lc code=end

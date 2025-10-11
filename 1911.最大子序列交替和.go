@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1911 lang=golang
  *
@@ -13,13 +15,6 @@ func maxAlternatingSum(nums []int) int64 {
 	}
 	return int64(even)
 
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

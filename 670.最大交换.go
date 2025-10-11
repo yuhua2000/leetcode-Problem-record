@@ -1,3 +1,7 @@
+package leetcode
+
+import "strconv"
+
 /*
  * @lc app=leetcode.cn id=670 lang=golang
  *

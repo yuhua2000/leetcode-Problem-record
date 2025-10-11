@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2413 lang=golang
  *
@@ -13,4 +15,3 @@ func smallestEvenMultiple(n int) int {
 }
 
 // @lc code=end
-

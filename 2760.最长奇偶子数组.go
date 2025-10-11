@@ -1,3 +1,5 @@
+package leetcode
+
 func longestAlternatingSubarray(nums []int, threshold int) int {
 	res, dp := 0, 0
 	for l := len(nums) - 1; l >= 0; l-- {

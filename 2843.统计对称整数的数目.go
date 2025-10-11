@@ -1,3 +1,5 @@
+package leetcode
+
 func countSymmetricIntegers(low int, high int) (res int) {
 	for i := low; i <= high; i++ {
 		if i < 100 && i%11 == 0 {

@@ -1,3 +1,7 @@
+package leetcode
+
+import "container/heap"
+
 /*
  * @lc app=leetcode.cn id=1499 lang=golang
  *
@@ -52,13 +56,6 @@ func findMaxValueOfEquation(points [][]int, k int) int {
 		heap.Push(pq, []int{x - y, x})
 	}
 	return res
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

@@ -1,3 +1,7 @@
+package leetcode
+
+import "sort"
+
 /*
  * @lc app=leetcode.cn id=1782 lang=golang
  *
@@ -36,13 +40,6 @@ func countPairs(n int, edges [][]int, queries []int) []int {
 		ans = append(ans, total)
 	}
 	return ans
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

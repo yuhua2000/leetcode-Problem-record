@@ -1,3 +1,4 @@
+package leetcode
 
 func maxValue(grid [][]int) int {
 	m := len(grid)
@@ -17,11 +18,4 @@ func maxValue(grid [][]int) int {
 		}
 	}
 	return ans[n-1]
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }

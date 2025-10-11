@@ -1,3 +1,5 @@
+package leetcode
+
 func maxDistance(arrays [][]int) (res int) {
 	n := len(arrays[0])
 	minVal := arrays[0][0]

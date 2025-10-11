@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1238 lang=golang
  *
@@ -14,4 +16,3 @@ func circularPermutation(n int, start int) []int {
 }
 
 // @lc code=end
-

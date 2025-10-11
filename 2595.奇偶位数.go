@@ -1,3 +1,5 @@
+package leetcode
+
 func evenOddBit(n int) []int {
 	var even, odd int
 	for i := 0; n > 0; i++ {

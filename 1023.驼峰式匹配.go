@@ -1,3 +1,7 @@
+package leetcode
+
+import "unicode"
+
 /*
  * @lc app=leetcode.cn id=1023 lang=golang
  *

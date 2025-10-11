@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1105 lang=golang
  *
@@ -25,19 +27,5 @@ func minHeightShelves(books [][]int, shelfWidth int) int {
 	}
 	return dp[n]
 }
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
 
 // @lc code=end
-

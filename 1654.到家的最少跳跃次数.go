@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1654 lang=golang
  *
@@ -44,13 +46,6 @@ func minimumJumps(forbidden []int, a int, b int, x int) int {
 		}
 	}
 	return -1
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

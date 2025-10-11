@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2050 lang=golang
  *
@@ -28,13 +30,6 @@ func minimumTime(n int, relations [][]int, time []int) (result int) {
 		result = max(result, dp(i))
 	}
 	return
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

@@ -1,3 +1,7 @@
+package leetcode
+
+import "math"
+
 func minimumCost(m int, n int, horizontalCut []int, verticalCut []int) int {
 	cache := make([]int, m*m*n*n)
 	for i := range cache {

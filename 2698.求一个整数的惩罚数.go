@@ -1,3 +1,7 @@
+package leetcode
+
+import "strconv"
+
 func punishmentNumber(n int) int {
 	var dfs func(string, int, int, int) bool
 	dfs = func(s string, pos, tot, target int) bool {

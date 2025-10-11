@@ -1,3 +1,7 @@
+package leetcode
+
+import "sort"
+
 func splitNum(num int) int {
 	nums := []int{}
 	for num > 0 {

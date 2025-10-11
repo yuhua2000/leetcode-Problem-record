@@ -1,3 +1,5 @@
+package leetcode
+
 func countSeniors(details []string) int {
 	result := 0
 	for _, d := range details {

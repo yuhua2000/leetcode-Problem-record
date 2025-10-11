@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=931 lang=golang
  *
@@ -29,13 +31,6 @@ func minFallingPathSum(matrix [][]int) int {
 		result = min(result, dp[n-1][i])
 	}
 	return result
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

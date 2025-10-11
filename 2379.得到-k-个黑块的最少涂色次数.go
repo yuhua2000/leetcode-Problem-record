@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2379 lang=golang
  *
@@ -19,16 +21,7 @@ func minimumRecolors(blocks string, k int) int {
 			}
 		}
 	}
-	strings.Fields()
 	return ans
 }
 
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
-
 // @lc code=end
-

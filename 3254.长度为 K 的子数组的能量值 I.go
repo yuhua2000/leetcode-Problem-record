@@ -1,3 +1,5 @@
+package leetcode
+
 func resultsArray(nums []int, k int) []int {
 	n := len(nums)
 	cnt := 0

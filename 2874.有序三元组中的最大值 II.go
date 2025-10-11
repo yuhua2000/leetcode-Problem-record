@@ -1,3 +1,5 @@
+package leetcode
+
 func maximumTripletValue(nums []int) int64 {
 	var (
 		n        = len(nums)

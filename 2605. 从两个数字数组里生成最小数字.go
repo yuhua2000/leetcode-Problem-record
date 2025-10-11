@@ -1,3 +1,5 @@
+package leetcode
+
 func minNumber(nums1 []int, nums2 []int) int {
 	nums1Min := 10
 	nums2Min := 10

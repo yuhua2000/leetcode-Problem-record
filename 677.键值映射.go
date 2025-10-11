@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=677 lang=golang
  *
@@ -56,4 +58,3 @@ func (m *MapSum) Sum(prefix string) int {
  * param_2 := obj.Sum(prefix);
  */
 // @lc code=end
-

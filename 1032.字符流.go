@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1032 lang=golang
  *
@@ -65,4 +67,3 @@ func (this *StreamChecker) Query(letter byte) bool {
  * param_1 := obj.Query(letter);
  */
 // @lc code=end
-

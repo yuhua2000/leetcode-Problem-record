@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2341 lang=golang
  *
@@ -15,16 +17,16 @@ func numberOfPairs(nums []int) []int {
 	// 		m[v]=0
 	// 	}
 	// }
-	var cnt=make(map[int]bool,len(nums)/2)
-	res:=0
-	  for _, num := range nums {
-        cnt[num] = !cnt[num]
-        if !cnt[num] {
-            res++
-        }
-    }
+	var cnt = make(map[int]bool, len(nums)/2)
+	res := 0
+	for _, num := range nums {
+		cnt[num] = !cnt[num]
+		if !cnt[num] {
+			res++
+		}
+	}
 
-	return []int{res,len(nums)-res*2}
+	return []int{res, len(nums) - res*2}
 }
-// @lc code=end
 
+// @lc code=end

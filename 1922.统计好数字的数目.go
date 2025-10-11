@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1922 lang=golang
  *
@@ -23,6 +25,4 @@ func pow(x, y int64) int {
 	return int(res)
 }
 
-
 // @lc code=end
-

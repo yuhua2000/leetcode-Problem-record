@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=42 lang=golang
  *
@@ -20,13 +22,6 @@ func trap(height []int) (ans int) {
 		}
 	}
 	return
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

@@ -1,3 +1,5 @@
+package leetcode
+
 func minCount(coins []int) int {
 	result := 0
 	for _, coin := range coins {

@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=918 lang=golang
  *
@@ -23,20 +25,6 @@ func maxSubarraySumCircular(nums []int) int {
 		res = max(res, rightSum+leftMax[i-1])
 	}
 	return res
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

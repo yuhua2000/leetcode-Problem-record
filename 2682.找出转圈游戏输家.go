@@ -1,3 +1,5 @@
+package leetcode
+
 func circularGameLosers(n int, k int) []int {
 	ops := make([]bool, n)
 	index := 0

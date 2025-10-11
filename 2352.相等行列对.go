@@ -1,3 +1,7 @@
+package leetcode
+
+import "fmt"
+
 /*
  * @lc app=leetcode.cn id=2352 lang=golang
  *

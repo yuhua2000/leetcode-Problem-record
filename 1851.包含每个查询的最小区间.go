@@ -1,3 +1,10 @@
+package leetcode
+
+import (
+	"container/heap"
+	"sort"
+)
+
 /*
  * @lc app=leetcode.cn id=1851 lang=golang
  *
@@ -69,13 +76,6 @@ func minInterval(intervals [][]int, queries []int) []int {
 		}
 	}
 	return res
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

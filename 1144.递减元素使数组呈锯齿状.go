@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1144 lang=golang
  *
@@ -23,19 +25,4 @@ func movesToMakeZigzag(nums []int) int {
 	return min(help(0), help(1))
 }
 
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
-
 // @lc code=end
-

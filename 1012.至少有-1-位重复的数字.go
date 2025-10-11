@@ -1,3 +1,9 @@
+package leetcode
+
+import (
+	"strconv"
+)
+
 /*
  * @lc app=leetcode.cn id=1012 lang=golang
  *
@@ -7,7 +13,6 @@
 // @lc code=start
 func numDupDigitsAtMostN(n int) (ans int) {
 	s := strconv.Itoa(n)
-	http.Request.Host
 	m := len(s)
 	memo := make([][1 << 10]int, m)
 	for i := range memo {

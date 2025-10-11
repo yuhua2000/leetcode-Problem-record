@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=771 lang=golang
  *
@@ -19,4 +21,5 @@ func numJewelsInStones(jewels string, stones string) (result int) {
 
 	return
 }
+
 // @lc code=end

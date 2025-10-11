@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1250 lang=golang
  *
@@ -20,7 +22,7 @@ func isGoodArray(nums []int) bool {
 			return true
 		}
 	}
-	return x==1
+	return x == 1
 }
-// @lc code=end
 
+// @lc code=end

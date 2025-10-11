@@ -1,3 +1,10 @@
+package leetcode
+
+import (
+	"sort"
+	"strings"
+)
+
 /*
  * @lc app=leetcode.cn id=833 lang=golang
  *
@@ -39,13 +46,6 @@ func findReplaceString(s string, indices []int, sources []string, targets []stri
 	}
 	return ans.String()
 
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

@@ -1,3 +1,7 @@
+package leetcode
+
+import "strconv"
+
 func findTheArrayConcVal(nums []int) (result int64) {
 	n := len(nums)
 	for i, j := 0, n-1; i <= j; {

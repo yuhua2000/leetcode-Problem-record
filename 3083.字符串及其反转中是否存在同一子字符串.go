@@ -1,3 +1,5 @@
+package leetcode
+
 func isSubstringPresent1(s string) bool {
 	m := make(map[string]bool)
 	for i := 0; i < len(s)-1; i++ {

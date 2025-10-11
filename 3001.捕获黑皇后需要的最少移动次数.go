@@ -1,3 +1,5 @@
+package leetcode
+
 func minMovesToCaptureTheQueen(a int, b int, c int, d int, e int, f int) int {
 	if a == e && (c != e || d <= min(b, f) || d >= max(b, f)) {
 		return 1

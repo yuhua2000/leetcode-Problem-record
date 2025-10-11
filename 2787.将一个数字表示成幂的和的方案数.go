@@ -1,3 +1,10 @@
+package leetcode
+
+import (
+	"fmt"
+	"math"
+)
+
 func numberOfWays(n int, x int) int {
 	const mod = 1_000_000_007
 	dp := make([][]int64, n+1)
@@ -17,4 +24,3 @@ func numberOfWays(n int, x int) int {
 	fmt.Println(dp)
 	return int(dp[n][n])
 }
- 

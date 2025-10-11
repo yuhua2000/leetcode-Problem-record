@@ -1,3 +1,5 @@
+package leetcode
+
 func semiOrderedPermutation(nums []int) int {
 	first, last := 0, 0
 	n := len(nums)

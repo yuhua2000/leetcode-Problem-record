@@ -1,3 +1,6 @@
+package leetcode
+
+import "math"
 
 /*
  * @lc app=leetcode.cn id=1653 lang=golang
@@ -30,15 +33,13 @@ func minimumDeletions1(s string) int {
 }
 
 func minimumDeletions(s string) int {
-	n := len(s)
-	ans := make([][2]int, n)
 	a, b := 0, 0
-	for i, c := range s {
+	for _, c := range s {
 		if c == 'a' {
 			a++
 		}
 	}
-	min = a
+	min := a
 	for _, c := range s {
 		if c == 'a' {
 			a--

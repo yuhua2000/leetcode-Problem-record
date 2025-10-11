@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1749 lang=golang
  *
@@ -18,20 +20,6 @@ func maxAbsoluteSum(nums []int) int {
 		negativeSum = min(0, negativeSum)
 	}
 	return max(positiveMax, -negativeMin)
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

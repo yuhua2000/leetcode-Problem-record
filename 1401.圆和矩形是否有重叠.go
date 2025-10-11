@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1401 lang=golang
  *
@@ -14,13 +16,6 @@ func checkOverlap(radius int, xCenter int, yCenter int, x1 int, y1 int, x2 int, 
 		dist += min((yCenter-y1)*(yCenter-y1), (yCenter-y2)*(yCenter-y2))
 	}
 	return dist <= radius*radius
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

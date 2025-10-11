@@ -1,3 +1,5 @@
+package leetcode
+
 func checkValidGrid(grid [][]int) bool {
 	if grid[0][0] != 0 {
 		return false

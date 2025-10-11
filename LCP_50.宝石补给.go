@@ -1,3 +1,5 @@
+package leetcode
+
 func giveGem(gem []int, operations [][]int) int {
 	for _, operations := range operations {
 		temp := gem[operations[0]] / 2

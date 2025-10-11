@@ -1,3 +1,4 @@
+package leetcode
 
 func numRookCaptures(board [][]byte) int {
 	var R int

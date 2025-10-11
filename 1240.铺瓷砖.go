@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1240 lang=golang
  *
@@ -5,19 +7,6 @@
  */
 
 // @lc code=start
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
 
 func tilingRectangle(n int, m int) int {
 	ans := max(n, m)

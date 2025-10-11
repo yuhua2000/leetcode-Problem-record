@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1761 lang=golang
  *
@@ -81,13 +83,6 @@ func minTrioDegree(n int, edges [][]int) int {
 		return -1
 	}
 	return ans
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

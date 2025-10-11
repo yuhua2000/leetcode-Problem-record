@@ -1,3 +1,5 @@
+package leetcode
+
 func occurrencesOfElement(nums []int, queries []int, x int) []int {
 	index := make([]int, 0, len(nums)/2)
 	for i, num := range nums {

@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1092 lang=golang
  *
@@ -45,13 +47,6 @@ func shortestCommonSupersequence(str1 string, str2 string) string {
 		ans[i], ans[n-i-1] = ans[n-i-1], ans[i]
 	}
 	return str1[:i+1] + str2[:j+1] + string(ans)
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

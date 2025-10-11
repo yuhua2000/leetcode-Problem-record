@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2469 lang=golang
  *
@@ -10,4 +12,3 @@ func convertTemperature(celsius float64) []float64 {
 }
 
 // @lc code=end
-

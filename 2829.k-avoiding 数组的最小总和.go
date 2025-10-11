@@ -1,3 +1,5 @@
+package leetcode
+
 func minimumSum(n int, k int) int {
 	result := 0
 	for i := 1; i <= k/2 && i <= n; i++ {

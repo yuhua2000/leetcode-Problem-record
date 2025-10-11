@@ -1,3 +1,5 @@
+package leetcode
+
 func distMoney(money int, children int) int {
 	if money < children {
 		return -1
@@ -10,11 +12,4 @@ func distMoney(money int, children int) int {
 		result--
 	}
 	return result
-}
-
-func min(x int, y int) int {
-	if x > y {
-		return y
-	}
-	return x
 }

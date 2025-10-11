@@ -1,3 +1,5 @@
+package leetcode
+
 func countOfSubstrings(word string, k int) int64 {
 	vowels := map[byte]bool{'a': true, 'e': true, 'i': true, 'o': true, 'u': true}
 	count := func(k int) int64 {

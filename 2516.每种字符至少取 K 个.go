@@ -1,3 +1,5 @@
+package leetcode
+
 func takeCharacters(s string, k int) int {
 	n := len(s)
 	prefixSum := [3]int{}

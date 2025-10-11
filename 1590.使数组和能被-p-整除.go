@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1590 lang=golang
  *
@@ -5,12 +7,6 @@
  */
 
 // @lc code=start
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
 
 func minSubarray(nums []int, p int) int {
 	n := len(nums)
@@ -44,7 +40,7 @@ func minSubarray(nums []int, p int) int {
 
 /*
 sum % p =x
- 
+
 如果 sum-(fj-fi+1)==0
 则
 

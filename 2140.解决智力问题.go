@@ -1,3 +1,5 @@
+package leetcode
+
 func mostPoints1(questions [][]int) int64 {
 	var dfs func(i int) int64
 	cache := map[int]int64{}

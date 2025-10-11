@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2383 lang=golang
  *
@@ -26,12 +28,4 @@ func minNumberOfHours(initialEnergy int, initialExperience int, energy []int, ex
 	return ans
 }
 
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
-
 // @lc code=end
-

@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=57 lang=golang
  *
@@ -27,20 +29,6 @@ func insert(intervals [][]int, newInterval []int) [][]int {
 		ans = append(ans, []int{l, r})
 	}
 	return ans
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

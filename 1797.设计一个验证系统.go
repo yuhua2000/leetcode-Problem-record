@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1797 lang=golang
  *
@@ -40,8 +42,6 @@ func (a *AuthenticationManager) CountUnexpiredTokens(currentTime int) int {
 	return len(a.tokenDic)
 }
 
-
-
 /**
  * Your AuthenticationManager object will be instantiated and called as such:
  * obj := Constructor(timeToLive);
@@ -50,4 +50,3 @@ func (a *AuthenticationManager) CountUnexpiredTokens(currentTime int) int {
  * param_3 := obj.CountUnexpiredTokens(currentTime);
  */
 // @lc code=end
-

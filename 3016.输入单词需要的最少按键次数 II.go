@@ -1,3 +1,10 @@
+package leetcode
+
+import (
+	"maps"
+	"sort"
+)
+
 func minimumPushes(word string) int {
 	ans := make(map[byte]int)
 	for i := range word {

@@ -1,6 +1,10 @@
+package leetcode
+
+import "slices"
+
 func findMatrix(nums []int) [][]int {
 	slices.Sort(nums)
- 
+
 	result := [][]int{[]int{nums[0]}}
 	level := 0
 	for i := 1; i < len(nums); i++ {

@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1263 lang=golang
  *
@@ -70,4 +72,3 @@ func minPushBox(grid [][]byte) int {
 }
 
 // @lc code=end
-

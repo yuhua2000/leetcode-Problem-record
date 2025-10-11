@@ -1,3 +1,7 @@
+package leetcode
+
+import "sort"
+
 /*
  * @lc app=leetcode.cn id=47 lang=golang
  *
@@ -34,4 +38,3 @@ func permuteUnique(nums []int) (ans [][]int) {
 }
 
 // @lc code=end
-

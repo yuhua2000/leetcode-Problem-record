@@ -1,3 +1,5 @@
+package leetcode
+
 func maximizeSum(nums []int, k int) int {
 	m := nums[0]
 	for _, num := range nums {

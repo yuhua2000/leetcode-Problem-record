@@ -1,3 +1,5 @@
+package leetcode
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -61,7 +63,7 @@ func reorderList(head *ListNode) {
 	for ; temp != nil; temp = temp.Next {
 		mid.Next = &ListNode{Val: temp.Val, Next: mid.Next}
 	}
-	
+
 	l1 := head
 	l2 := mid.Next
 	mid.Next = nil

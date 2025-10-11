@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1595 lang=golang
  *
@@ -5,12 +7,6 @@
  */
 
 // @lc code=start
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
 
 func connectTwoGroups(cost [][]int) int {
 	size1, size2, m := len(cost), len(cost[0]), 1<<len(cost[0])

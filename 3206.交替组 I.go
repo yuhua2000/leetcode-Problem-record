@@ -1,3 +1,5 @@
+package leetcode
+
 func numberOfAlternatingGroups(colors []int) (result int) {
 	for i := 0; i < len(colors); i++ {
 		start := ((i - 1) + len(colors)) % len(colors)

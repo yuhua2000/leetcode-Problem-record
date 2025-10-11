@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=687 lang=golang
  *
@@ -42,4 +44,3 @@ func longestUnivaluePath(root *TreeNode) int {
 }
 
 // @lc code=end
-

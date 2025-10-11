@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1545 lang=golang
  *
@@ -24,12 +26,11 @@ func findKthBit1(n int, k int) byte {
 	return last[k-1]
 }
 
-
 func findKthBit(n int, k int) byte {
 	if k == 1 {
 		return '0'
 	}
-	mid := 1 << (n - 1) 
+	mid := 1 << (n - 1)
 	if k == mid {
 		return '1'
 	} else if k < mid {
@@ -46,4 +47,3 @@ func findKthBit(n int, k int) byte {
 }
 
 // @lc code=end
-

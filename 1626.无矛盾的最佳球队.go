@@ -1,3 +1,7 @@
+package leetcode
+
+import "sort"
+
 /*
  * @lc app=leetcode.cn id=1626 lang=golang
  *
@@ -77,13 +81,6 @@ func bestTeamScore(scores []int, ages []int) int {
 
 func lowbit(x int) int {
 	return x & (-x)
-}
-
-func max(a, b int) int {
-	if b > a {
-		return b
-	}
-	return a
 }
 
 // @lc code=end

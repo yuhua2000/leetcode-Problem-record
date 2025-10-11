@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1605 lang=golang
  *
@@ -27,12 +29,4 @@ func restoreMatrix(rowSum []int, colSum []int) [][]int {
 	return matrix
 }
 
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
-
 // @lc code=end
-

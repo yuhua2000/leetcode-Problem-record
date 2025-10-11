@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1361 lang=golang
  *
@@ -49,4 +51,3 @@ func validateBinaryTreeNodes(n int, leftChild []int, rightChild []int) bool {
 }
 
 // @lc code=end
-

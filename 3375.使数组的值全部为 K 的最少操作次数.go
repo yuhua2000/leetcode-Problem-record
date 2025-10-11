@@ -1,3 +1,5 @@
+package leetcode
+
 func minOperations(nums []int, k int) int {
 	numMap := make(map[int]bool, len(nums))
 	minNum := nums[0]

@@ -57,14 +57,7 @@
 1 <= nums[i] < 105
 0 <= andValues[j] < 105
 */
-package main
-
-func min(x int, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
+package leetcode
 
 func minimumValueSum(nums []int, andValues []int) int {
 	var dfs func(idx int, subIdx int, andValue int) int

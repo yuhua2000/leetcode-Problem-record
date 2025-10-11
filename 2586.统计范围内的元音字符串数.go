@@ -1,3 +1,5 @@
+package leetcode
+
 func vowelStrings(words []string, left int, right int) (result int) {
 	vowel := map[byte]bool{
 		'a': true,

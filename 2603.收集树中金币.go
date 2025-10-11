@@ -1,3 +1,5 @@
+package leetcode
+
 func collectTheCoins(coins []int, edges [][]int) int {
 	n := len(coins)
 	g := make([][]int, n)

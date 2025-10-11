@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1186 lang=golang
  *
@@ -12,13 +14,6 @@ func maximumSum(arr []int) int {
 		res = max(res, max(dp0, dp1))
 	}
 	return res
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

@@ -1,3 +1,10 @@
+package leetcode
+
+import (
+	"math"
+	"sort"
+)
+
 /*
  * @lc app=leetcode.cn id=1187 lang=golang
  *
@@ -34,13 +41,6 @@ func makeArrayIncreasing(arr1 []int, arr2 []int) int {
 		}
 	}
 	return -1
-}
-
-func min(a, b int) int {
-	if a > b {
-		return b
-	}
-	return a
 }
 
 // @lc code=end

@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=211 lang=golang
  *
@@ -62,7 +64,6 @@ func (w *WordDictionary) Search(word string) bool {
 	return dfs(0, w.tree)
 }
 
-
 /**
  * Your WordDictionary object will be instantiated and called as such:
  * obj := Constructor();
@@ -70,4 +71,3 @@ func (w *WordDictionary) Search(word string) bool {
  * param_2 := obj.Search(word);
  */
 // @lc code=end
-

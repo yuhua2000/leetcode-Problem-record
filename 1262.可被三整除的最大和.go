@@ -1,3 +1,7 @@
+package leetcode
+
+import "sort"
+
 /*
  * @lc app=leetcode.cn id=1262 lang=golang
  *
@@ -13,12 +17,6 @@ func accumulate(v []int) int {
 	return ans
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
 func maxSumDivThree(nums []int) int {
 	v := make([][]int, 3)
 	for _, num := range nums {

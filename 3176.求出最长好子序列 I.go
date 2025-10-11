@@ -1,3 +1,5 @@
+package leetcode
+
 func maximumLength(nums []int, k int) int {
 	lenNums := len(nums)
 	dp := make([][]int, lenNums)
@@ -21,9 +23,9 @@ func maximumLength(nums []int, k int) int {
 					dp[i][l] = max(dp[i][l], dp[j][l-add]+1)
 				}
 			}
-            ans = max(ans, dp[i][l])
+			ans = max(ans, dp[i][l])
 		}
-		
+
 	}
 	return ans
 }

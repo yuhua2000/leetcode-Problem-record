@@ -1,3 +1,10 @@
+package leetcode
+
+import (
+	"container/heap"
+	"math"
+)
+
 /*
  * @lc app=leetcode.cn id=2532 lang=golang
  *
@@ -38,20 +45,6 @@ func (pq *queue) Pop() any {
 
 func (pq *queue) Peek() *item {
 	return (*pq)[0]
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 func findCrossingTime(n int, k int, time [][]int) int {

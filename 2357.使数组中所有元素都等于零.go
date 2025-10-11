@@ -1,3 +1,7 @@
+package leetcode
+
+import "sort"
+
 /*
  * @lc app=leetcode.cn id=2357 lang=golang
  *
@@ -30,12 +34,4 @@ func minimumOperations(nums []int) int {
 	return len(m)
 }
 
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
-
 // @lc code=end
-

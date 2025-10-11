@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1163 lang=golang
  *
@@ -19,13 +21,6 @@ func lastSubstring(s string) string {
 		}
 	}
 	return s[i:]
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
 }
 
 // @lc code=end

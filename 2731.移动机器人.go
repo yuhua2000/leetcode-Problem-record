@@ -1,3 +1,7 @@
+package leetcode
+
+import "sort"
+
 func sumDistance(nums []int, s string, d int) int {
 	const mod = 1e9 + 7
 	n := len(nums)

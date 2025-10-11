@@ -1,3 +1,10 @@
+package leetcode
+
+import (
+	"sort"
+	"strings"
+)
+
 /*
  * @lc app=leetcode.cn id=1233 lang=golang
  *
@@ -53,5 +60,5 @@ func removeSubfolders(folder []string) []string {
 	return ans
 
 }
-// @lc code=end
 
+// @lc code=end

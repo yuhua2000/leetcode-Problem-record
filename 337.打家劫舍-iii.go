@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=337 lang=golang
  *
@@ -27,13 +29,6 @@ func rob(root *TreeNode) int {
 	}
 	val := f(root)
 	return max(val[0], val[1])
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

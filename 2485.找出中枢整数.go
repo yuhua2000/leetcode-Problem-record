@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2485 lang=golang
  *
@@ -15,4 +17,3 @@ func pivotInteger(n int) int {
 }
 
 // @lc code=end
-

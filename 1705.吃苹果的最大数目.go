@@ -1,3 +1,7 @@
+package leetcode
+
+import "container/heap"
+
 /*
  * @lc app=leetcode.cn id=1705 lang=golang
  *

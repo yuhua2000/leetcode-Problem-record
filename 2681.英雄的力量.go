@@ -1,3 +1,7 @@
+package leetcode
+
+import "sort"
+
 func sumOfPower(nums []int) (res int) {
 	n := len(nums)
 	sort.Ints(nums)

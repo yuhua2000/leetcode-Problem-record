@@ -1,3 +1,5 @@
+package leetcode
+
 func findTheLongestBalancedSubstring(s string) (result int) {
 	count0, count1 := 0, 0
 	for i, c := range s {
@@ -11,18 +13,4 @@ func findTheLongestBalancedSubstring(s string) (result int) {
 		}
 	}
 	return result
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }

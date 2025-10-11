@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1140 lang=golang
  *
@@ -24,13 +26,6 @@ func stoneGameII(piles []int) int {
 		}
 	}
 	return dp[0][1]
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

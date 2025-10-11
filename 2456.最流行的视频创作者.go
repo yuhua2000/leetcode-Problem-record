@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=2456 lang=golang
  *
@@ -38,13 +40,6 @@ func mostPopularCreator(creators []string, ids []string, views []int) [][]string
 		}
 	}
 	return ans
-}
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

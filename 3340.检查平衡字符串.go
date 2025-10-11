@@ -1,3 +1,5 @@
+package leetcode
+
 func isBalanced(num string) bool {
 	sum := 0
 	for i, digit := range num {

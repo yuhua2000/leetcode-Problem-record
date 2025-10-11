@@ -1,3 +1,7 @@
+package leetcode
+
+import "math"
+
 func minimumCost(s string) int64 {
 	n := len(s)
 	suf := make([][2]int64, n+1)

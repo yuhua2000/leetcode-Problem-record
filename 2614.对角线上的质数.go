@@ -1,3 +1,5 @@
+package leetcode
+
 func diagonalPrime(nums [][]int) int {
 	n, res := len(nums), 0
 	for i := 0; i < len(nums); i++ {

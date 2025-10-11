@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode.cn id=1253 lang=golang
  *
@@ -37,12 +39,6 @@ func reconstructMatrix(upper int, lower int, colsum []int) [][]int {
 		}
 	}
 	return res
-}
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }
 
 // @lc code=end

@@ -1,3 +1,7 @@
+package leetcode
+
+import "math"
+
 /*
  * @lc app=leetcode.cn id=2544 lang=golang
  *
