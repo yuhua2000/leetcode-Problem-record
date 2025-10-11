@@ -12,8 +12,7 @@ func maximumTotalDamage(power []int) int64 {
 
 	bestPrev := func(i int) int64 {
 		j := i - 1
-		for j >= 0 && (power[j] == power[i]-1 || power[j] == power[i]-2 ||
-			power[j] == power[i]+1 || power[j] == power[i]+2) {
+		for j >= 0 && (power[j] == power[i]-1 || power[j] == power[i]-2) {
 			j--
 		}
 
