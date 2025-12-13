@@ -2,17 +2,10 @@ package leetcode
 
 import (
 	"slices"
-	"sort"
 	"strings"
 )
 
 func validateCoupons(code []string, businessLine []string, isActive []bool) []string {
-	categoryMap := map[string]int{
-		"electronics": 0,
-		"grocery":     1,
-		"pharmacy":    2,
-		"restaurant":  3,
-	}
 	var pos []int
 	for i := range len(code) {
 		if !isActive[i] || len(code[i]) == 0 {
@@ -31,14 +24,14 @@ func validateCoupons(code []string, businessLine []string, isActive []bool) []st
 		}
 	}
 
-	sort.Slice(pos, func(i, j int) bool {
-		iCatagory := categoryMap[businessLine[pos[i]]]
-		jCatagory := categoryMap[businessLine[pos[j]]]
+	slices.SortFunc(pos, func(i, j int) int {
+		iCatagory := businessLine[i]
+		jCatagory := businessLine[j]
 		if iCatagory != jCatagory {
-			return iCatagory < jCatagory
+			return strings.Compare(iCatagory, jCatagory)
 		}
 
-		return strings.Compare(code[pos[i]], code[pos[j]]) < 0
+		return strings.Compare(code[i], code[j])
 	})
 
 	result := make([]string, 0, len(pos))
