@@ -9,12 +9,6 @@ package leetcode
  * }
  */
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func createBinaryTree(descriptions [][]int) *TreeNode {
 	treeNodeGraph := make(map[int]*TreeNode)
 	isChild := make(map[int]bool)
